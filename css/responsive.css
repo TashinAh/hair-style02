@@ -1,0 +1,90 @@
+@media screen and (max-width: 992px){
+	.fa-solid{
+		display: block;
+	}
+	.fa-times{
+		padding: 10px;
+	}
+	.menu-area ul{
+		display: block;
+	}
+	.menu-area ul li{
+		padding: 15px 0;
+	}
+	.menu-area ul li::after{
+		display: none;
+	}
+	.menu-area ul li a{
+		margin-left: 20px;
+	}
+	.menu-area ul li a:hover{
+		color: black;
+	}
+	.menu-area{
+		display: none;
+		background: linear-gradient(#008799, rgba(0, 0, 0, 0.9));
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 100vh;
+		position: fixed;
+		z-index: 2;
+	}
+	.banner-text h1{
+		font-size: 100px;
+	}
+	.features h4{
+		padding: 10px 0;
+	}
+	.right p i{
+		display: inline;
+	}
+}
+@media screen and (max-width: 768px){
+	.features h4{
+		padding: 5px 0;
+		font-size: 30px;
+	}
+	.features p{
+		font-size: 18px;
+	}
+	.features-text{
+		padding: 0;
+	}
+	.features-img{
+		margin-top: 50px;
+	}
+	.features-img img{
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width: 576px){
+	.banner-text h1{
+		font-size: 70px;
+	}
+	.features-img{
+		margin: 0;
+	}
+}
+@media screen and (max-width: 320px){
+	.banner-text h1{
+		font-size: 50px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+	.banner-btn a:nth-child(1){
+		margin-bottom: 10px;
+	}
+	.features-head h2{
+		font-size: 30px;
+	}
+	.overlay:hover .desc{
+		opacity: 1;
+		bottom: 10%;
+	}
+	.right{
+		text-align: left;
+	}
+}

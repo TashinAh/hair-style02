@@ -1,0 +1,360 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+ul, li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 80%;
+	max-width: 1150px;
+}
+/*========================= comman css part============================ */
+
+/*========================= banner css part start ============================ */
+.banner{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../pictures/hero-pic.jpg) no-repeat center;
+	background-size: cover;
+	min-height: 100vh;
+}
+.header-part{
+	height: 20vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-area h2{
+	color: #fff;
+	font-weight: bold;
+}
+.menu-area ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-area ul li{
+	padding: 0 5px;
+}
+.menu-area ul li a{
+	color: #fff;
+	padding: 15px 20px;
+	font-weight: bold;
+}
+.menu-area ul li::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #00E5F7;
+	display: block;
+	margin: auto;
+	transition: 0.6s;
+}
+.menu-area ul li:hover::after{
+	width: 70%;
+}
+.banner-text{
+	text-align: center;
+	height: 80vh;
+	color: #fff;
+	transform: translateY(70px);
+}
+.banner-text h1{
+	font-size: 120px;
+	font-family: 'Pangolin', cursive;
+	font-weight: bold;
+}
+.banner-text p{
+	font-style: italic;
+	font-size: 20px;
+}
+.banner-btn{
+	margin: 40px auto 0;
+}
+.banner-btn a{
+	width: 150px;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	border-radius: 10px;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: 0.6s;
+}
+.banner-btn a:hover{
+	color: #000;
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.8s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.menu-area ul .fa-solid{
+	color: #fff;
+	display: none;
+}
+.bars-part .fa-solid{
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 28px;
+	display: none;
+}
+.fa-times{
+	font-size: 25px;
+	color: #fff;
+	display: none;
+}
+.fa-bars{
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	display: none;
+	background: #009688;
+	border-radius: 5px;
+	font-size: 20px;
+	top: 30px;
+	right: 40px;
+	position: fixed;
+	z-index: 2;
+}
+/*========================= banner css part end ============================ */
+/*========================= featuresd css part start ========================== */
+.features-part{
+	padding: 50px 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+.features-head{
+	text-align: center;
+	padding: 0 0 70px 0;
+}
+.features-head h6{
+	color: #009688;
+	padding-bottom: 5px;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+.features-head h6::after{
+	content: '';
+	width: 50px;
+	height: 35px;
+	position: absolute;
+	background: linear-gradient(#019587,#fff);
+	top: -20px;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+.features-head h2{
+	font-weight: bold;
+	font-size: 40px;
+}
+.features h4{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-top: 40px;
+	color: #009688;
+	font-size: 37px;
+}
+.features-img img{
+	width: 100%;
+}
+.features-img{
+	margin-left: 100px;
+	position: relative;
+}
+.features-img .features-overlay{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+	position: absolute;
+}
+.features-text{
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+.features-text .fa-solid{
+	color: #009688;
+	width: 45px;
+	height: 45px;
+	border: 0.5px solid #009688;
+	line-height: 42px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 25px;
+}
+.features-text p{
+	padding-left: 18px;
+	font-size: 20px;
+}
+/*========================= featuresd css part end ============================ */
+/*========================= service css part start ============================ */
+.service-part{
+	padding: 50px 0;
+}
+.service-img img{
+	width: 100%;
+}
+.service-img{
+	position: relative;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), #009688);
+	opacity: 0;
+	transition: 0.6s;
+}
+.overlay:hover{
+	opacity: 1;
+}
+.desc hr{
+	width: 60%;
+	display: inline-block;
+	height: 4px;
+	border: 0;
+	margin: 15px 0;
+	background: #fff;
+}
+.desc{
+	color: #fff;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	transition: 1s;
+}
+.overlay:hover .desc{
+	opacity: 1;
+	bottom: 30%;
+}
+/*========================= service css part end ============================ */
+/*========================= testimonial css part start ======================== */
+.testi-part{
+	padding: 50px 0;
+}
+.testi-img img{
+	width: 50px;
+	padding: 0 10px 8px 0;
+}
+.testi-img{
+	display: flex;
+	align-items: center;
+}
+.text-testi h5 i{
+	color: #009688;
+	padding-left: 10px;
+}
+.text-testi small{
+	color: #009688;
+}
+.testi-test{
+	padding: 10px;
+	box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	transition: 0.4s;
+}
+.testi-test:hover{
+	transform: translateY(-10px);
+}
+/*========================= testimonial css part end ========================= */
+/*========================= contact css part start ========================= */
+.contact-part{
+	padding: 50px 0;
+	background: #e0dfe1;
+	position: relative;
+}
+.features-head{
+	padding: 30px 0;
+	z-index: 2;
+}
+.contact-text{
+	padding: 0 0 30px 0;
+}
+.contact-text h2{
+	font-weight: 600;
+	padding: 0 0 8px 0;
+}
+.contact-text p i{
+	color: #009688;
+	padding: 8px 8px 0 8px;
+}
+.right{
+	text-align: right;
+}
+hr{
+	width: 70%;
+	height: 3px;
+	margin: 55px 0;
+	background: #009888;
+	border: 0;
+	text-align: center;
+	display: inline-block;
+}
+.social-media{
+	text-align: center;
+}
+.fa-brands{
+	color: #009688;
+	padding: 5px;
+	border: 1px solid #009688;
+}
+.demo-img{
+	width: 200px;
+	max-width: 300px;
+	opacity: 0.1;
+	position: absolute;
+	left: 50%;
+	top: 18%;
+	border-radius: 45%;
+	transform: translate(-50%,-50%);
+}
+/*========================= contact css part end ========================= */
+
+/*stickup css part start*/
+.isStuck{
+	background-color: black;
+	position: sticky;
+	top: 0;
+}
